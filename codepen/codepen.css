@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: lightblue;
+}
+
+.main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 35px 3fr 30px;
+}
+
+.header {
+    background: salmon;
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+.sidebar {
+    background:lightgreen;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows:repeat(3,1fr);
+
+
+}
+
+.content {
+    background:lightseagreen;
+
+}
+.footer{
+    background: lightskyblue;
+    grid-column: 1/-1;
+    
+}
+
+.header .text{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    column-gap: 2px;
+}
+
+
+.text .login {
+    grid-column: -1/-2;
+    background: black;
+    color: white;
+    height: 30px;
+    margin:8px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/-1;
+    border-radius: 3px;
+}
+
+.text .signup{
+    grid-column: -2/-3;
+    background: black;
+    color: white;
+    height: 30px;
+    margin:8px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/-1;
+    border-radius: 3px;
+}
+
+.text .book {
+    grid-column: -4/-3;
+    background: black;
+    color: white;
+    height: 30px;
+    margin:8px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/-1;
+    border-radius: 3px;
+}
+
+.text .setting{
+    grid-column: -5/-4;
+    background: black;
+    color: white;
+    height: 30px;
+    margin:8px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/-1;
+    border-radius: 3px;
+}
+
+.text .save{
+    grid-column: -5/-6;
+    background: black;
+    color: white;
+    height: 30px;
+    margin:8px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/-1;
+    border-radius: 3px;
+}
+
+
+.htm{
+    background: gold; 
+}
+.css{
+    background: khaki;
+}
+.JS{
+    background: cadetblue;
+}
+
+.footer .text1{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.footer .console{
+    background: black;
+    color: white;
+    height: 20px;
+    margin:20px 1px;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/-1;
+    border-radius: 3px;
+}
+
+.footer .asset{
+    background: black;
+    color: white;
+    height: 20px;
+    margin:20px 1px;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/-1;
+    border-radius: 3px;
+}
+
+.footer .shrt{
+    background: black;
+    color: white;
+    height: 20px;
+    margin:20px 1px;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/-1;
+    border-radius: 3px;
+}
